@@ -8,6 +8,7 @@ body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: rgb(255, 255, 255);
     background-color: #ffffff;
+    font-weight: bold;
 }
 
 nav {
@@ -31,7 +32,6 @@ main {
 .logo {
     display: flex;
     justify-content: center; 
-    border: solid 1px blue;
     overflow: hidden;
     height: 20dvh;
     align-items: center;
@@ -57,11 +57,10 @@ main {
     width: 850px;
     height: 100%;
     background-color: rgb(255, 255, 255);
-    border: solid 1px white;
     align-items: center;
-    color: rgb(102, 102, 102);
+    color: rgb(80, 80, 80);
     border-radius: 50px;
-    border: solid 1px gray;
+    border: solid 1px rgb(161, 161, 161);
 }
 
 .buttons {
@@ -71,18 +70,30 @@ main {
     margin: 25px;
 }
 
-#search-button {
+.fade-in {
     font-size: 11px;
     width: 130px;
     height: 30px;
     border-radius: 6px;
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+    transition: all 0.5s;
 }
 
-#lucky-button {
+.fade-in:hover {
+    animation: fade-in 0.5s ease-out forwards;
+}
+
+
+
+.fade-in2 {
     font-size: 11px;
     width: 130px;
     height: 30px;
     border-radius: 6px;
+    background-color: white;
+    cursor: pointer;
+    animation: fade-in 0.8s ease-out forwards;
 }
 
 .search-input {
@@ -94,26 +105,45 @@ main {
 }
 
 #search {
-    border: solid 1px red;
     font-size: 20px;
-
+    cursor: pointer;
 }
 
 
 #key {
-    border: solid 1px red;
     font-size: 20px;
-    
+    cursor: pointer;
 }
 
 #mic {
-    border: solid 1px red;
     font-size: 20px;
-
+    cursor: pointer;
 }
 
 #cam {
-    border: solid 1px red;
     font-size: 20px;
+    cursor: pointer;
+}
 
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fade-in2 {
+    from {
+        opacity: 0;
+        transform: translateY(0);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(-20px);
+    }
 }
