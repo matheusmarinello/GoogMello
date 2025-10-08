@@ -1,9 +1,13 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
-
+*{
+    box-sizing: border-box;
+    padding: 0;
+    border: 0;
+}
 body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: white;
-    background-color: #202124;
+    color: rgb(255, 255, 255);
+    background-color: #ffffff;
 }
 
 nav {
@@ -19,15 +23,97 @@ nav {
     display: flex; /* ou flex, se estiver dentro de um container flexível */
     margin-left: auto; /* empurra para a direita */
 }
-
+main {
+    padding: 100px;
+    height: 40dvh;
+    border: solid 1px white;
+}
 .logo {
-  display: flex;
-  justify-content: center; 
+    display: flex;
+    justify-content: center; 
+    border: solid 1px blue;
+    overflow: hidden;
+    height: 20dvh;
+    align-items: center;
 }
 
 .logo img {
-    width: 450px
+    width: 450px;
+    height: 450px;
+    background-color: #ffffff;
+}
+
+.search-container {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.search-box {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    width: 850px;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    border: solid 1px white;
+    align-items: center;
+    color: rgb(102, 102, 102);
+    border-radius: 50px;
+    border: solid 1px gray;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 6pc;
+    margin: 25px;
+}
+
+#search-button {
+    font-size: 11px;
+    width: 130px;
+    height: 30px;
+    border-radius: 6px;
+}
+
+#lucky-button {
+    font-size: 11px;
+    width: 130px;
+    height: 30px;
+    border-radius: 6px;
+}
+
+.search-input {
+    width: 650px;
+    height: 99%;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    outline: none;
+}
+
+#search {
+    border: solid 1px red;
+    font-size: 20px;
+
 }
 
 
+#key {
+    border: solid 1px red;
+    font-size: 20px;
+    
+}
 
+#mic {
+    border: solid 1px red;
+    font-size: 20px;
+
+}
+
+#cam {
+    border: solid 1px red;
+    font-size: 20px;
+
+}
