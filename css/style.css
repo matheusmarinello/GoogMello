@@ -1,1 +1,33 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    background-color: #202124;
+}
+
+nav {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 10px;
+}
+
+.profile-icon {
+    width: 40px;
+    border-radius: 100%;
+    display: flex; /* ou flex, se estiver dentro de um container flexível */
+    margin-left: auto; /* empurra para a direita */
+}
+
+.logo {
+  display: flex;
+  justify-content: center; 
+}
+
+.logo img {
+    width: 450px
+}
+
+
+
